@@ -6,14 +6,13 @@ $heading5: 16px;
 $headingp: 14px;
 
 // Colors
-$primary: #FCA62B;
-$primary-light: #f7c627;
-$secondary: #84D5DE;
-$secondary-shadow: rgba(132, 213, 222, 0.2);
-$white: #FFFFFF;
-$black: #1E1E1E;
+$primary: #CC2B29;
+$grey: #DBDAE5;
+$black: #393B40;
+$blue: #1FC4CC;
+$white: #FFF;
 $error: #FF9090;
-$success: #8AF58E;
+$success: #00DE0F;
 
 $font-weight-thin: 300;
 $font-weight-regular: 400; 
@@ -45,11 +44,10 @@ $font-weight-bold: 700;
 
 * {
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-weight: 300;
 
     ul, li, a{
         padding: 0;
