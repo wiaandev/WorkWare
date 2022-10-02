@@ -1,0 +1,13 @@
+@import '../../assets/base.scss';
+
+.Section{
+    margin-left: 300px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+  }
