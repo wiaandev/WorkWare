@@ -1,10 +1,10 @@
 
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/wiaandev/WorkSpace?color=lightblue)
-![GitHub watchers](https://img.shields.io/github/watchers/wiaandev/WorkSpace?color=lightblue)
-![GitHub language count](https://img.shields.io/github/languages/count/wiaandev/WorkSpace?color=lightblue)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wiaandev/WorkSpace?color=lightblue)
+![GitHub repo size](https://img.shields.io/github/repo-size/wiaandev/WorkWare?color=lightblue)
+![GitHub watchers](https://img.shields.io/github/watchers/wiaandev/WorkWare?color=lightblue)
+![GitHub language count](https://img.shields.io/github/languages/count/wiaandev/WorkWare?color=lightblue)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wiaandev/WorkWare?color=lightblue)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Instagram][instagram-shield]][instagram-url]
 
@@ -14,11 +14,11 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/wiaandev/WorkSpace">
+  <a href="https://github.com/wiaandev/WorkWare">
     <img src="client\src\Assets\logo-light.svg/" width="100px">
   </a>
 
-<h3 align="center">WorkSpace</h3>
+<h3 align="center">WorkWare</h3>
 
   <p align="center">
     A Guitar E-Commerce Website Build with the MERN Stack.<br>
@@ -27,9 +27,9 @@
    <br />
    <a href="https://youtu.be/8iZ_rSmcN0E">View Demo</a>
     ·
-    <a href="https://github.com/wiaandev/WorkSpace/issues">Report Bug</a>
+    <a href="https://github.com/wiaandev/WorkWare/issues">Report Bug</a>
     ·
-    <a href="https://github.com/wiaandev/WorkSpace/issues">Request Feature</a>
+    <a href="https://github.com/wiaandev/WorkWare/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -68,7 +68,7 @@
 
 ### Project Description
 
-This is WorkSpace! A guitar e-commerce store where the user can interact with it via adding guitars to the cart and then checking out, in which they will push an order to the database that can be retrieved by the admin and then can later be dispatched. The only brand sold on this site is Gibson. NOTE: THIS IS A MOCK E-COMMERCE WEBSITE.
+This is WorkWare! A guitar e-commerce store where the user can interact with it via adding guitars to the cart and then checking out, in which they will push an order to the database that can be retrieved by the admin and then can later be dispatched. The only brand sold on this site is Gibson. NOTE: THIS IS A MOCK E-COMMERCE WEBSITE.
 
 ### Built With
 [<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783)
@@ -96,13 +96,13 @@ For development, the latest version of Android Studio is required. The latest ve
 Here are a couple of ways to clone this repo:
 
 1.  GitHub Desktop </br>
-    Enter `https://github.com/wiaandev/WorkSpace.git` into the URL field and press the `Clone` button.
+    Enter `https://github.com/wiaandev/WorkWare.git` into the URL field and press the `Clone` button.
 
 2.  Clone Repository </br>
     Run the following in the command-line to clone the project:
 
     ```sh
-    git clone https://github.com/wiaandev/WorkSpace.git
+    git clone https://github.com/wiaandev/WorkWare.git
     ```
 
         Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
@@ -141,7 +141,7 @@ If the user wants to place an order for their guitar, they can do so by proceedi
 ### For the Admin
 #### Adding Guitars To The Store
 ![image6][image5]
-The admin has access the to the inventory management page, which means he can add guitars to the store by clicking on "New Guitar+", wherein a modal will popup and the admin can enter all the necessary information to add a guitar to WorkSpace.
+The admin has access the to the inventory management page, which means he can add guitars to the store by clicking on "New Guitar+", wherein a modal will popup and the admin can enter all the necessary information to add a guitar to WorkWare.
 
 #### Updating Guitar Information
 ![image7][image6] If the user feels like there is some information on a guitar that is not accurate or that needs updating, the  admin can do so by clicking on the update button, where again, a modal will pop-up and the admin can update a guitar's information accordingly.
@@ -153,7 +153,7 @@ The admin has access the to the inventory management page, which means he can ad
 ![image14][image14]From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.
 
 <!-- CONCEPT PROCESS -->
-<!-- Briefly eWorkSpacelain your concept ideation process -->
+<!-- Briefly eWorkWarelain your concept ideation process -->
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 
 ## Concept Process
@@ -189,7 +189,7 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Highlights
 
-<!-- stipulated the highlight you eWorkSpaceerienced with the project -->
+<!-- stipulated the highlight you eWorkWareerienced with the project -->
 
 - A very big high point was seeing the data from my backend being populated dynamically in my front-end.
 - Seeing everything come together in the end was also a big highlight for me
@@ -235,11 +235,11 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this -->
 
-To see a run through of WorkSpace, click below:
+To see a run through of WorkWare, click below:
 
 [View Demonstration](https://youtu.be/8iZ_rSmcN0E)
 
-See the [open issues](https://github.com/wiaandev/WorkSpace/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/wiaandev/WorkWare/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 
@@ -258,7 +258,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 - **Wiaan Duvenhage** - [wiaanduvenhage.dev@gmail.com](mailto:wiaanduvenhage.dev@gmail.com) - [@wiaan.dev](https://www.instagram.com/wiaan.dev/)
-- **Project Link** - https://github.com/wiaandev/WorkSpace
+- **Project Link** - https://github.com/wiaandev/WorkWare
 
 <!-- ACKNOWLEDGEMENTS -->
 
