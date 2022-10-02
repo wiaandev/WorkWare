@@ -1,8 +1,8 @@
-$heading1: 42px;
-$heading2: 36px;
-$heading3: 24px;
-$heading4: 20px;
-$heading5: 16px;
+$heading1: 36px;
+$heading2: 24px;
+$heading3: 18px;
+$heading4: 16px;
+$heading5: 14px;
 $headingp: 14px;
 
 // Colors
@@ -24,17 +24,17 @@ $font-weight-bold: 700;
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #f2f2f2;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #CC2B29;
   }
   
   /* Handle on hover */
@@ -63,11 +63,12 @@ $font-weight-bold: 700;
 
 h1 {
 font-size: $heading1;
-font-weight: 400;
+font-weight: 800;
 }
 
 h2 {
 font-size: $heading2;
+font-weight: 400;
 }
 
 h3 {
