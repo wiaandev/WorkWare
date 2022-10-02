@@ -6,8 +6,8 @@ const caffeinatedSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    coordinates: {
-        type: String,
+    coffeeLevels: {
+        type: Number,
         required: true
     },
     time: {
@@ -19,11 +19,8 @@ const caffeinatedSchema = mongoose.Schema({
         default: Date.now
     },
     timeline: Array,
-    trackStatus: {
-        type: Boolean,
-        required: true
-    },
-    timeDiff: Number
+    timeDiff: Number,
+    averageIntake: Number
 
 });
 

@@ -20,7 +20,11 @@ const BrightLiteSchema = mongoose.Schema({
         type: Boolean,
         required: true
     },
-    timeDiff: Number
+    timeDiff: Number,
+    mode: {
+        type: String,
+        required: true
+    }
 
 });
 
