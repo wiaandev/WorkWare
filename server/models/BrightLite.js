@@ -18,7 +18,8 @@ const BrightLiteSchema = mongoose.Schema({
     timeline: Array,
     lightStatus: {
         type: Boolean,
-        required: true
+        required: true,
+        default: false
     },
     timeDiff: Number,
     mode: {

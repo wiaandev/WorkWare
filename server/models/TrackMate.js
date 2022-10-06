@@ -21,7 +21,8 @@ const trackMateSchema = mongoose.Schema({
     timeline: Array,
     trackStatus: {
         type: Boolean,
-        required: true
+        required: true,
+        default: false
     },
     timeDiff: Number
 

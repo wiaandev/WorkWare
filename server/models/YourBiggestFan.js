@@ -17,7 +17,8 @@ const yourBiggestFanSchema = mongoose.Schema({
     timeline: Array,
     fanStatus: {
         type: Boolean,
-        required: true
+        required: true,
+        default: false
     }
 
 });
