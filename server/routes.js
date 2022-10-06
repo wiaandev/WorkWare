@@ -108,7 +108,6 @@ router.post('/api/yourbiggestfan', (req, res) => {
     const newData = new ybf({
         name : data.name,
         temp: +data.temp,
-        date: Date.now,
         timeline: Array,
         fanStatus: data.fanStatus
     })
@@ -121,6 +120,11 @@ router.post('/api/yourbiggestfan', (req, res) => {
     .catch(err => {
         res.status(400).json({msg: "There was an error", err});
     });
+})
+
+router.get('/api/getall/', async (req, res) => {
+    const findAll = await brightLite.find();
+    res.json(findAll)
 })
 
 module.exports = router;
