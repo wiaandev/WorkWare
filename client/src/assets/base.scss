@@ -90,3 +90,15 @@ font-size: $heading5;
 font-size: $headingp;
 }
 
+@mixin backgroundImages {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ButtonMove{
+  order: 0;
+  flex: 0 1 auto;
+  align-self: flex-end;
+}
+

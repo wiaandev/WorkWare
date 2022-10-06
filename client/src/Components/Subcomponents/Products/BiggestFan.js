@@ -6,8 +6,9 @@ const SmartFan = (props) => {
     return (
         <div className={Style.Container}>
             <div className={Style.Icon}></div>
-            <div className={Style.TempDisp}><h1>18°C</h1></div>
-            <Button></Button>
+            <div className={Style.TempDisp}>18°C</div>
+            <p className={Style.Paragraph}>Fan: Off</p>
+            <Button className='ButtonMove'>More</Button>
         </div>
     );
 };

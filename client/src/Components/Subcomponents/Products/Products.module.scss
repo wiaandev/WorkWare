@@ -19,13 +19,27 @@
 }
 
 .Icon{
-    width: 35%;
+    width: 40%;
     height: 27vh;
-    background-color: gray;
+    background-image: url('../../../Icons/ice.svg');
+    @include backgroundImages;
     border-radius: 25px;
+    border: 4px solid $blue;
 }
 
 .TempDisp{
-    margin-left: 20%;
+    font-size: 48px !important;
+    font-weight: bold;
+    margin-left: 10%;
     margin-bottom: 10vh;
+}
+
+.Paragraph{
+    width: 90px;
+    height: 40px;
+    padding-top: 13px;
+    padding-right: 10px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
 }
