@@ -1,5 +1,5 @@
-import Navigation from "./components/Subcomponents/Navigation/Navigation";
-import RightSection from "./components/RightSection/RightSection";
+import Navigation from "./Components/Subcomponents/Navigation/Navigation";
+import RightSection from "./Components/RightSection/RightSection";
 import './assets/base.scss';
 
 function App() {

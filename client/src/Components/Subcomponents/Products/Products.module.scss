@@ -7,7 +7,25 @@
     height: 31vh;
     background-color: white;
     border-radius: 20px;
-    padding: 15px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
     box-shadow:
     0px 0px 20px rgba(0, 0, 0, 0.05)
+}
+
+.Icon{
+    width: 35%;
+    height: 27vh;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+.TempDisp{
+    margin-left: 20%;
+    margin-bottom: 10vh;
 }

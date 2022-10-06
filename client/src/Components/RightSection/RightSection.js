@@ -1,16 +1,19 @@
 import React from 'react';
 import Style from './RightSection.module.scss';
-import SmartFan from "../Subcomponents/Products/SmartFan";
-import SmartClock from '../Subcomponents/Products/SmartClock';
+import BiggestFan from "../Subcomponents/Products/BiggestFan";
+import TrackMate from '../Subcomponents/Products/TrackMate';
+import Brightlite from '../Subcomponents/Products/Brightlite';
+import Caffeinated from '../Subcomponents/Products/Caffeinated';
+import HandyStandy from '../Subcomponents/Products/HandyStandy';
 
 const RightSection = () => {
     return (
         <div className={Style.Section}>
-            <SmartFan/>
-            <SmartFan/>
-            <SmartFan/>
-            <SmartFan/>
-            <SmartClock/>
+            <Brightlite/>
+            <BiggestFan/>
+            <Caffeinated/>
+            <HandyStandy/>
+            <TrackMate/>
         </div>
     );
 };

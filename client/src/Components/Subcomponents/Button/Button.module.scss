@@ -1,0 +1,12 @@
+@import '../../../assets/base.scss';
+
+.Btn{
+    background-color: $blue;
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+}
