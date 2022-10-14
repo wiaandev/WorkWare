@@ -18,6 +18,16 @@
   align-items: flex-start;
 }
 
+.breakTwo {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+}
+
 .Heading {
   flex: 0 0 100%;
   height: 30px;

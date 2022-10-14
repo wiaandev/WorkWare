@@ -36,6 +36,7 @@ const RightSection = () => {
   ];
 
   const options = {
+    maintainAspectRatio: false,
     responsive: true,
     plugins: {
       legend: {
@@ -117,7 +118,7 @@ const RightSection = () => {
       <h1 className={Style.Heading}>Your Data Today</h1>
       <br></br>
       <br></br>
-      <div className={Style.break}>
+      <div className={Style.breakTwo}>
         <Line options={options} data={data} />
       </div>
       <br></br>
