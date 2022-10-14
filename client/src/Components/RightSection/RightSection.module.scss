@@ -1,13 +1,26 @@
-@import '../../assets/base.scss';
+@import "../../assets/base.scss";
 
-.Section{
-    margin-left: 300px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-  }
+.Section {
+  margin-left: 300px;
+  height: 100vh;
+  background-color: #2b2b2b;
+  overflow-y: auto;
+  text-align: center;
+  padding-left: 25px;
+}
+
+.break {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+}
+
+.Heading {
+  flex: 0 0 100%;
+  height: 30px;
+  color: white;
+  padding-left: 20px;
+}

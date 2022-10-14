@@ -1,17 +1,23 @@
-import React from 'react';
-import Style from './Navigation.module.scss'
+import React from "react";
+import OnlineDevice from "../OnlineDevices/OnlineDevice";
+import Style from "./Navigation.module.scss";
 
 const Navigation = () => {
-    return (
-        <div className={Style.Container}>
-            <div>
-                <div className={Style.Image}></div>
-                <h1>Hello user!</h1>
-            </div>
-            <h2 className={Style.Float}>Online Devices<div className={Style.Circle}>4</div></h2>
-            <p>Monday, 10 February 2020</p>
-        </div>
-    );
+  return (
+    <div className={Style.Container}>
+      <div>
+        <div className={Style.Image}></div>
+        <h1>WorkWare</h1>
+      </div>
+      <br></br>
+      <h2 className={Style.Float}>Devices active</h2>
+      <div className={Style.Devices}>
+        <OnlineDevice DeviceName="Biggest Fan" />
+      </div>
+
+      <p>WorkWare 1.0</p>
+    </div>
+  );
 };
 
 export default Navigation;

@@ -6,99 +6,112 @@ $heading5: 14px;
 $headingp: 14px;
 
 // Colors
-$primary: #CC2B29;
-$grey: #DBDAE5;
-$black: #393B40;
-$blue: #1FC4CC;
-$white: #FFF;
-$error: #FF9090;
-$success: #00DE0F;
+$primary: #cc2b29;
+$grey: #dbdae5;
+$black: #393b40;
+$blue: #1fc4cc;
+$white: #fff;
+$error: #ff9090;
+$success: #00de0f;
 
 $font-weight-thin: 300;
-$font-weight-regular: 400; 
+$font-weight-regular: 400;
 $font-weight-bold: 700;
 
-.App{
+.App {
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: #2b2b2b;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f2f2f2;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #CC2B29;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+  width: 5px;
+  border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 * {
-    scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  ul,
+  li,
+  a {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-
-    ul, li, a{
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style-type: none;
-        display: inline;
-        display: flex;
-        gap: 50px;
-        transition: 0.1s ease-in-out;
-    }
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    display: flex;
+    gap: 50px;
+    transition: 0.1s ease-in-out;
+  }
 }
 
 h1 {
-font-size: $heading1;
-font-weight: 800;
+  font-size: $heading1;
+  font-weight: 800;
+  margin: 0 !important;
 }
 
 h2 {
-font-size: $heading2;
-font-weight: 800;
+  font-size: $heading2;
+  font-weight: 800;
+  margin: 0 !important;
 }
 
 h3 {
-font-size: $heading3;
+  font-size: $heading3;
 }
 
 h4 {
-font-size: $heading4;
-padding: 0;
-margin: 0;
+  font-size: $heading4;
+  padding: 0;
+  margin: 0;
 }
 
 h5 {
-font-size: $heading5;
+  font-size: $heading5;
 }
 
-.p1, p, label {
-font-size: $headingp;
+.p1,
+p,
+label {
+  font-size: $headingp;
 }
 
 @mixin backgroundImages {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.ButtonMove{
+.ButtonMove {
   order: 0;
   flex: 0 1 auto;
   align-self: flex-end;
 }
 
+@mixin Shadow {
+  box-shadow: 12.5px 12.5px 14.4px -30px rgba(0, 0, 0, 0.025),
+    100px 100px 115px -30px rgba(0, 0, 0, 0.05);
+}

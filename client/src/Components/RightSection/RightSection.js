@@ -1,21 +1,38 @@
-import React from 'react';
-import Style from './RightSection.module.scss';
-import BiggestFan from "../Subcomponents/Products/BiggestFan";
-import TrackMate from '../Subcomponents/Products/TrackMate';
-import Brightlite from '../Subcomponents/Products/Brightlite';
-import Caffeinated from '../Subcomponents/Products/Caffeinated';
-import HandyStandy from '../Subcomponents/Products/HandyStandy';
+import React from "react";
+import Product from "../Subcomponents/Products/Product";
+import Style from "./RightSection.module.scss";
 
 const RightSection = () => {
-    return (
-        <div className={Style.Section}>
-            <Brightlite/>
-            <BiggestFan/>
-            <Caffeinated/>
-            <HandyStandy/>
-            <TrackMate/>
-        </div>
-    );
+  return (
+    <div className={Style.Section}>
+      <br></br>
+      <br></br>
+      <h1 className={Style.Heading}>Your Devices</h1>
+      <br></br>
+      <br></br>
+      <div className={Style.break}>
+        <Product
+          icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
+          title={"Biggest Fan"}
+          data={"20"}
+          dataType={"Degrees Celsius"}
+          variable={""}
+        />
+      </div>
+      <br></br>
+      <h1 className={Style.Heading}>Graph</h1>
+      <br></br>
+      <div className={Style.break}>
+        <Product
+          icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
+          title={"Biggest Fan"}
+          data={"20"}
+          dataType={"Degrees Celsius"}
+          variable={""}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default RightSection;

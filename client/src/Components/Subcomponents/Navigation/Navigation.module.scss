@@ -1,54 +1,54 @@
-@import '../../../assets/base.scss';
+@import "../../../assets/base.scss";
 
-.Container{
-    width: 300px;
-    height: 100vh;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translate(0%, -50%);
-    background-color: $primary;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+.Container {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: $primary;
+  //   padding-top: 1%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  @include Shadow();
 }
 
-.Image{
-    width: 140px;
-    height: 140px;
-    background-color: white;
-    border-radius: 200px;
-    margin: 0 auto;
-    margin-bottom: 15%;
+.Image {
+  width: 140px;
+  height: 140px;
+  background-image: url("../../../Icons/84888074f29046d45ce35b9cd5f1b2f1-removebg-preview-lines-scale-4_00x.png");
+  border-radius: 200px;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 15%;
 }
 
-.Float{
-    float: left;
+.Circle {
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 10px;
 }
 
-.Circle{
-    float: right;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 50px;
-    text-align: center;
-    margin-left: 10px;
+.Devices {
+  height: 60vh;
+  width: 95%;
+  //   background-color: white;
+  //   border-radius: 25px;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.Devices h2 {
+  text-align: center;
 }
