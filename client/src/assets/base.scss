@@ -99,6 +99,10 @@ label {
   font-size: $headingp;
 }
 
+.hide {
+  display: none;
+}
+
 @mixin backgroundImages {
   background-position: center;
   background-size: cover;
@@ -112,6 +116,6 @@ label {
 }
 
 @mixin Shadow {
-  box-shadow: 12.5px 12.5px 14.4px -30px rgba(0, 0, 0, 0.025),
-    100px 100px 115px -30px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 9.8px -10px rgba(0, 0, 0, 0.05),
+    40px 40px 78px -10px rgba(0, 0, 0, 0.1);
 }

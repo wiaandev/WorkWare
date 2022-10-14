@@ -87,16 +87,16 @@ const RightSection = () => {
         />
         <Product
           icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
-          title={"Biggest Fan"}
-          data={"20"}
-          dataType={"Degrees Celsius"}
+          title={"HandyStandy"}
+          data={"30"}
+          dataType={"Notifications Today"}
           variable={""}
         />
         <Product
           icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
           title={"Biggest Fan"}
           data={"20"}
-          dataType={"Degrees Celsius"}
+          dataType={""}
           variable={""}
         />
         <Product

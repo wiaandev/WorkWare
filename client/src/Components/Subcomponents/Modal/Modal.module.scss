@@ -1,0 +1,30 @@
+@import "../../../assets/base.scss";
+
+.ModalCon {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include Shadow();
+  backdrop-filter: blur(2px);
+}
+
+.Modal {
+  position: absolute;
+  border-radius: 25px;
+  width: 80%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  @include Shadow();
+  border: 5px solid #1fc4cc;
+  background-color: white;
+}
+
+.ChartContainer {
+  height: 55vh !important;
+}
