@@ -127,4 +127,38 @@ router.get('/api/getall/', async (req, res) => {
     res.json(findAll)
 })
 
+router.patch ('/api/updateLed/:name', async (req, res) => {
+    const findAll = await ledState.find();
+    const arrayName = findAll.filter(item => item.name == req.params.name);
+    currentId = "";
+
+    if (arrayName.length === 0){
+        const newValue = new ledState({
+            name: req.params.name, 
+            led: req.body.led,
+        });
+        newValue.save()
+        .then(item2 => {
+            res.json(item2)
+        })
+        .catch(err => {
+           res.status(400).json({msg:"There is an error", err}); 
+        });
+    }
+    else{
+        currentId = arrayName[0]._id
+
+        const findLed = await ledState.updateOne(
+            {_id:currentId},
+            {$set: {
+                    led: req.body.led
+                }
+            }
+        );
+        res.json(findLed);
+    }
+
+    
+})
+
 module.exports = router;

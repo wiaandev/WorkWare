@@ -94,7 +94,7 @@ const RightSection = () => {
         />
         <Product
           icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
-          title={"Biggest Fan"}
+          title={"BrightLite"}
           data={"20"}
           dataType={""}
           variable={""}

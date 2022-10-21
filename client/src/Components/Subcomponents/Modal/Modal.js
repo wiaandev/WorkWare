@@ -8,10 +8,13 @@ import {
   Title,
   Tooltip,
 } from "chart.js";
-import React from "react";
+import React, {useState} from "react";
 import { Bar } from "react-chartjs-2";
 import Button from "../Button/Button";
 import Style from "./Modal.module.scss";
+import axios from 'axios';
+
+
 
 ChartJS.register(
   CategoryScale,
@@ -47,6 +50,37 @@ const Modal = (props) => {
     },
   };
 
+  const ledToggle = () => {
+    let state = ledState;
+
+    if(state !== true){
+      setLedState(true)
+      
+      console.log("Led true");
+   }else{
+      state = false
+      setLedImage();
+      setLedState(false)
+      console.log("Led false");
+   }
+   console.log(ledState);
+    let payload = {
+      led: ledState
+  }
+    axios.patch('http://localhost:80/api/updateLed/' + payload)
+      .then((res)=> {
+       
+         if(res){
+          console.log('Led Updated');
+         }
+      })
+      .catch(function (error) {
+          console.log(error);
+      });
+    
+    
+  }
+
   const data = {
     labels,
     datasets: [
@@ -63,11 +97,16 @@ const Modal = (props) => {
     ],
   };
 
+const [ledValue, setLedValue] = useState("Loading...");
+const [ledState, setLedState] = useState();
+const [ledImage, setLedImage] = useState();
+
   return (
     <div className={props.open ? Style.ModalCon : "hide"}>
       <div className={Style.Modal}>
         <h1>{props.data}</h1>
         <Button onClick={() => props.setOpen(!props.open)}>Close</Button>
+        <Button onClick={ledToggle}>Toggle LED</Button>
         <br></br>
         <div className={Style.ChartContainer}>
           <Bar options={options} data={data} />;
