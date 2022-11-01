@@ -8,14 +8,14 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Instagram][instagram-shield]][instagram-url]
 
-<h5 align="center" style="padding:0;margin:0;">Reinhardt de Beer | Wiaan Duvenhage</h5>
-<h5 align="center" style="padding:0;margin:0;">21100115 | 200307</h5>
-<h6 align="center">CC204 | Internet of Things</h6>
+<h5 align="center" style="padding:0;margin:0;">Wiaan Duvenhage</h5>
+<h5 align="center" style="padding:0;margin:0;">200307</h5>
+<h6 align="center">DV204 | iOS Introduction</h6>
 </br>
 <p align="center">
 
   <a href="https://github.com/wiaandev/WorkWare">
-    <img src="client\src\Assets\logo-light.svg/" width="100px">
+    <img src="EasyPC/Assets/AppIcon" width="100px">
   </a>
 
 <h3 align="center">WorkWare</h3>
