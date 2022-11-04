@@ -1,4 +1,8 @@
 import { faker } from "@faker-js/faker";
+import axios from "axios";
+
+import { useState, useEffect } from "react";
+
 import {
   CategoryScale,
   Chart as ChartJS,
@@ -12,6 +16,9 @@ import {
 import React from "react";
 import { Line } from "react-chartjs-2";
 import Product from "../Subcomponents/Products/Product";
+
+import CaffeinatedProduct from "../Subcomponents/Products/CaffinatedProduct";
+
 import Style from "./RightSection.module.scss";
 
 ChartJS.register(
@@ -71,6 +78,39 @@ const RightSection = () => {
     ],
   };
 
+
+    // const AdminPermission = () => {
+    //     let payload = {
+    //         requestStatus: "true"
+    //     }
+
+    //     Axios.patch('/api/adminreqauth/:id' + activeUser, payload)
+    //         .then((res) => {
+    //             if (res) {
+    //                 console.log("User Updated");
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         });
+    // }
+
+
+  // Caffeinated 
+  // ==========================================================================
+
+  // useEffect(() => {
+
+  //   axios.get('/api/getuserinput/', (res, req) => {
+  //     const data = res.data;
+  //     console.log(data);
+  // })
+
+  // }, []);
+
+   // ==========================================================================
+
+
   return (
     <div className={Style.Section}>
       <br></br>
@@ -106,9 +146,9 @@ const RightSection = () => {
           dataType={"Degrees Celsius"}
           variable={""}
         />
-        <Product
+        <CaffeinatedProduct
           icon={"http://www.mypicx.com/uploadimg/1312875436_05012011_2.png"}
-          title={"Biggest Fan"}
+          title={"Caffinated"}
           data={"20"}
           dataType={"Degrees Celsius"}
           variable={""}
