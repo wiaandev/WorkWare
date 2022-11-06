@@ -1,30 +1,21 @@
 const mongoose = require('mongoose');
 
 const BrightLiteSchema = mongoose.Schema({
-
-    name : {
-        type: String,
-        required: true
-    },
-    lightLevels: {
-        type: Number,
-        required: true
-    },
+    name : String,
+    lightLevels: Number,
     time: Number,
     date: {
         type: Date,
         default: Date.now
     },
+    state: Boolean,
     timeline: Array,
-    lightStatus: {
-        type: Boolean,
-        required: true,
-        default: false
-    },
+    red: {type : Number, default: 0},
+    blue: {type : Number, default: 0},
+    green: {type : Number, default: 0},
     timeDiff: Number,
     mode: {
         type: String,
-        required: true
     }
 
 });

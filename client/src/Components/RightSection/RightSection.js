@@ -9,10 +9,11 @@ import {
   Title,
   Tooltip,
 } from "chart.js";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Line } from "react-chartjs-2";
 import Product from "../Subcomponents/Products/Product";
 import Style from "./RightSection.module.scss";
+import axios from 'axios'
 
 ChartJS.register(
   CategoryScale,
@@ -24,7 +25,15 @@ ChartJS.register(
   Legend
 );
 
+const ledUser = "Wiaan Duvenhage";
+
+const payload = {
+  red: 255, green: 0, blue: 0
+}
+
 const RightSection = () => {
+
+  const [ledState, setLedState] = useState()
   const labels = [
     "January",
     "February",
@@ -70,6 +79,26 @@ const RightSection = () => {
       },
     ],
   };
+
+  useEffect(() =>{
+      axios.get(`http://localhost:80/api/getLed/${ledUser}`)
+      .then( res =>{
+        console.log(res)
+      })
+      .catch(err =>{
+
+      })
+
+      axios.patch(`http://localhost:80/api/updateLed/${ledUser}`, payload)
+      .then(res => {
+        console.log(payload);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  }, [])
+
+
 
   return (
     <div className={Style.Section}>

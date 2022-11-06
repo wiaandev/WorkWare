@@ -52,6 +52,7 @@ const Modal = (props) => {
 
   const ledToggle = () => {
     let state = ledState;
+    let name = "Wiaan Duvenhage"
 
     if(state !== true){
       setLedState(true)
@@ -65,19 +66,10 @@ const Modal = (props) => {
    }
    console.log(ledState);
     let payload = {
-      led: ledState
+      red: 0,
+      green: 0,
+      blue: 0
   }
-    axios.patch('http://localhost:80/api/updateLed/' + payload)
-      .then((res)=> {
-       
-         if(res){
-          console.log('Led Updated');
-         }
-      })
-      .catch(function (error) {
-          console.log(error);
-      });
-    
     
   }
 
@@ -106,7 +98,7 @@ const [ledImage, setLedImage] = useState();
       <div className={Style.Modal}>
         <h1>{props.data}</h1>
         <Button onClick={() => props.setOpen(!props.open)}>Close</Button>
-        <Button onClick={ledToggle}>Toggle LED</Button>
+        <Button onClick={() => props.update()}>{props.buttonName}</Button>
         <br></br>
         <div className={Style.ChartContainer}>
           <Bar options={options} data={data} />;
