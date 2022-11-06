@@ -10,7 +10,7 @@
 
 <h5 align="center" style="padding:0;margin:0;">Wiaan Duvenhage</h5>
 <h5 align="center" style="padding:0;margin:0;">200307</h5>
-<h6 align="center">DV204 | iOS Introduction</h6>
+<h6 align="center">CC204 | Internet of Things</h6>
 </br>
 <p align="center">
 
